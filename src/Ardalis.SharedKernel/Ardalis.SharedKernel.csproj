@@ -13,9 +13,9 @@
     <RepositoryUrl>https://github.com/ardalis/Ardalis.SharedKernel</RepositoryUrl>
     <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Ardalis;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
-    <Version>1.5.0</Version>
+    <Version>1.5.1</Version>
     <PackageReleaseNotes>
-      * Update to Support Dispatching Events with Non-Integer IDs by @demidov-ad in https://github.com/ardalis/Ardalis.SharedKernel/pull/5
+      * Update to Support IAuditableEntity and ISoftDelete interfaces, and to create a Sequential Guid Generator.
     </PackageReleaseNotes>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -27,7 +27,10 @@
     <PackageReference Include="Ardalis.GuardClauses" />
     <PackageReference Include="Ardalis.Specification" />
     <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="RT.Comb.AspNetCore" />
+    
   </ItemGroup>
 
   <ItemGroup>
