@@ -6,8 +6,8 @@ public class SequentialGuidGenerator(ICombProvider combProvider) : ISequentialGu
 {
   public Guid NewSequentialGuid()
   {
-    SqlCombProvider? sqlCombProvider = (SqlCombProvider?)combProvider;
+    var sqlCombProvider = (SqlCombProvider?)combProvider;
 
-    return sqlCombProvider == null ? throw new Exception("sqlCombProvider is null") : sqlCombProvider.Create(DateTime.UtcNow);
+    return sqlCombProvider == null ? throw new Exception("sqlCombProvider is null") : sqlCombProvider.Create();
   }
 }

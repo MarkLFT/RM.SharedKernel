@@ -7,7 +7,7 @@ public class GenerateSequentialGuids
 {
 
   [Fact]
-  public async Task GeneratesSequentialGuids()
+  public void GeneratesSequentialGuids()
   {
     // Arrange
 
@@ -23,17 +23,7 @@ public class GenerateSequentialGuids
     // Act
 
     var guid1 = sequentialGuidGenerator.NewSequentialGuid();
-
-    /// Add 1ms delay as accuracy of Linux clock is 1ms, less that this, and they would have the same time.  
-    /// Even if have the same time, they will not clash, they would not be guaranteed to be saved in the 
-    /// correct sequence, becuase of the random part of the Guid.
-
-    await Task.Delay(1);
-
     var guid2 = sequentialGuidGenerator.NewSequentialGuid();
-
-    await Task.Delay(1);
-
     var guid3 = sequentialGuidGenerator.NewSequentialGuid();
 
 

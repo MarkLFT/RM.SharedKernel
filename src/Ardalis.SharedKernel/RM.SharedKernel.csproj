@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>Ardalis.SharedKernel</AssemblyName>
-    <PackageId>Ardalis.SharedKernel</PackageId>
-    <Title>Ardalis.SharedKernel</Title>
+    <AssemblyName>RM.SharedKernel</AssemblyName>
+    <PackageId>RM.SharedKernel</PackageId>
+    <Title>RM.SharedKernel</Title>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Steve Smith (@ardalis)</Authors>
+    <Authors>Steve Smith (@ardalis), Mark Townsend</Authors>
     <Company>Ardalis.com</Company>
     <Description>An example shared kernel project/package for use with Ardalis.CleanArchitecture template. You should probably replace this with your own package!</Description>
     <Summary>An example shared kernel project/package for use with Ardalis.CleanArchitecture template</Summary>
@@ -20,7 +20,7 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <DocumentationFile>bin\$(Configuration)\Ardalis.SharedKernel.xml</DocumentationFile>    
+    <DocumentationFile>bin\$(Configuration)\RM.SharedKernel.xml</DocumentationFile>    
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <NoWarn>1701;1702;1591;1573;1712</NoWarn>
+    <NoWarn>1701;1702;1591;1573;1712;NU1507</NoWarn>
   </PropertyGroup>
 
 
