@@ -4,6 +4,6 @@ namespace Ardalis.SharedKernel;
 
 public interface IConcurrencyEntity
 {
-  [Timestamp]
-  public byte[] Version { get; set; }
+  [ConcurrencyCheck]
+  public int Version { get; set; }
 }

@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/ardalis/Ardalis.SharedKernel</RepositoryUrl>
     <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Ardalis;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
-    <Version>1.5.2</Version>
+    <Version>1.5.3</Version>
     <PackageReleaseNotes>
       * Update to Support IAuditableEntity and ISoftDelete interfaces, and to create a Sequential Guid Generator.
     </PackageReleaseNotes>
