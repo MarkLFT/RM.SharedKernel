@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Finbuckle.MultiTenant.Abstractions;
 
-namespace rm.micro.tenants.Core.TenantAggregate;
+namespace RM.SharedKernel;
 public class RMTenant : ITenantInfo
 {
   public RMTenant() { }
