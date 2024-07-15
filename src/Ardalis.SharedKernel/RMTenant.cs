@@ -1,12 +1,12 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Finbuckle.MultiTenant;
+using Finbuckle.MultiTenant.Abstractions;
 
 namespace RM.SharedKernel;
-public class RMTenant : ITenantInfo
+public class RMTenantInfo : ITenantInfo
 {
-  public RMTenant() { }
+  public RMTenantInfo() { }
 
-  public RMTenant([NotNull] string id, [NotNull] string identifier, [NotNull] string name, string? connectionString, string adminEmail, DateTime validUpTo)
+  public RMTenantInfo([NotNull] string id, [NotNull] string identifier, [NotNull] string name, string? connectionString, string adminEmail, DateTime validUpTo)
   {
     Id = id;
     Identifier = identifier;
@@ -22,6 +22,6 @@ public class RMTenant : ITenantInfo
   public string? ConnectionString { get; set; }
   public string? AdminEmail { get; set; }
   public DateTime ValidUpTo { get; set; }
-  public bool IsActive { get; set; }
+  public bool IsActive { get; set; } = true;
 
 }
