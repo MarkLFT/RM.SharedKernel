@@ -27,7 +27,7 @@ public class DispatchAndClearEventsWithGuidId
     entity.AddTestDomainEvent();
 
     // Act
-    await domainEventDispatcher.DispatchAndClearEvents(new List<EntityBase<Guid>> { entity });
+    await domainEventDispatcher.DispatchAndClearEvents([entity]);
 
     // Assert
     mediatorMock.Verify(m => m.Publish(It.IsAny<DomainEventBase>(), It.IsAny<CancellationToken>()), Times.Once);
